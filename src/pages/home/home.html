@@ -1,0 +1,245 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><h1>Fun with Flags</h1></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content class="cards-bg">
+<ion-card>
+<img src="assets/imgs/i3.png" >
+
+<ion-card-content color="light">
+      <ion-card-title color="black" >
+       <a id="b"> Denmark </a>
+      </ion-card-title>
+Which country flag is this?
+ <ion-item>
+                <ion-label>Country</ion-label>
+                <ion-select [(ngModel)]="p" interface="popover" #C >
+                   <ion-option *ngFor="let p of countries " [value]="p">{{p.name}}
+                  </ion-option>
+
+</ion-select>
+</ion-item>
+<button ion-button (click)="fn(C.value)">Check </button>
+<p id="demo"></p>
+</ion-card-content>
+</ion-card>
+
+
+<ion-card>
+<img src="assets/imgs/i1.png">
+<ion-card-content color="light">
+      <ion-card-title color="light">
+        <a id="b">India</a>
+      </ion-card-title>
+Which country flag is this?
+<ion-item>
+                <ion-label>Country</ion-label>
+              <ion-select [(ngModel)]="p1" interface="popover" #D >
+                   <ion-option *ngFor="let p1 of countries " [value]="p1">{{p1.name}}
+                 </ion-option>
+                 </ion-select>
+              </ion-item>
+
+              <button ion-button (click)="fn1(D.value)">Check </button>
+              <p id="demo1"></p>
+
+    </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+<img src="assets/imgs/i2.png">
+<ion-card-content color="light">
+      <ion-card-title color="light">
+      <a id="b">  United Kingdom of Great Britain and Northern Ireland </a>
+      </ion-card-title>
+Which country flag is this?
+<ion-item>
+ <ion-label>Country</ion-label>
+                <ion-select [(ngModel)]="p2" interface="popover" #E >
+                                   <ion-option *ngFor="let p2 of countries " [value]="p2">{{p2.name}}
+                                 </ion-option>
+                 </ion-select>
+</ion-item>
+                 <button ion-button (click)="fn2(E.value)">Check </button>
+                              <p id="demo2"></p>
+
+               </ion-card-content>
+              </ion-card>
+
+
+      <ion-card>
+              <img src="assets/imgs/i4.png">
+              <ion-card-content color="light">
+                    <ion-card-title color="light">
+                   <a id="b">  Ireland </a>
+                    </ion-card-title>
+              Which country flag is this?
+            <ion-item>
+             <ion-label>Country</ion-label>
+                             <ion-select [(ngModel)]="p3" interface="popover" #F >
+                                                               <ion-option *ngFor="let p3 of countries " [value]="p3">{{p3.name}}
+                                                             </ion-option>
+                             </ion-select>
+            </ion-item>
+
+            <button ion-button (click)="fn3(F.value)">Check </button>
+                                          <p id="demo3"></p>
+                             </ion-card-content>
+                            </ion-card>
+
+
+
+      <!--
+      <ion-list inset>
+        <ion-item>India</ion-item>
+         <ion-item>Ireland</ion-item>
+         <ion-item>US</ion-item>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+            {{ item }}
+          </button>
+           </ion-list>
+
+          <ion-item>
+                <ion-label>Country</ion-label>
+                <ion-select interface="popover" >
+                  <ion-option >India</ion-option>
+                  <ion-option >Ireland</ion-option>
+                  <ion-option >Denmark</ion-option>
+                </ion-select>
+              </ion-item>
+-->
+
+<!--
+  </ion-card>
+
+  <ion-card>
+
+    <div>
+      <img src="assets/img/badu-live.png"/>
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>
+        Erykah Badu
+      </ion-card-title>
+      <p>
+      American singer-songwriter, record producer, activist, and actress, Badu's style is a prime example of neo-soul.
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='musical-notes'></ion-icon>
+          Listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <ion-card>
+
+    <div>
+      <img src="assets/img/queen-live.png"/>
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>
+        Queen
+      </ion-card-title>
+      <p>
+        The British rock band formed in London in 1970, and is considered one of the biggest stadium rock bands in the world.
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='musical-notes'></ion-icon>
+          Listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <ion-card>
+
+    <div>
+      <img src="assets/img/rundmc-live.png"/>
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>
+        Run-D.M.C.
+      </ion-card-title>
+      <p>
+        The American hip hop group widely acknowledged as one of the most influential acts in the history of hip hop.
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='musical-notes'></ion-icon>
+          Listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+  <ion-item>
+   <ion-select interface="popover" >
+  <ion-option *ngFor>{{countries.name}}</ion-option>
+  </ion-select>
+  </ion-item>
+-->
+
+</ion-content>
+
+
